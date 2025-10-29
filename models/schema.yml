@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw
+    database: sublime-cargo-475009-k1
+    schema: gz_raw_data
+    loader: bigquery
+    description: this is the raw data
+    freshness:
+       warn_after: {count: 12, period: hour}
+       error_after: {count: 24, period: hour}
+    tables:
+      - name: sales
+        identifier: raw_gz_sales
+        description: this is the raw sales data
+
+      - name: product
+        identifier: raw_gz_product
+        description: this is the raw product data
+
+      - name: ship
+        identifier: raw_gz_ship
+        description: this is the raw shipping data
