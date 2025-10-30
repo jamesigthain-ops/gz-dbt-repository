@@ -125,3 +125,11 @@ models:
         description: date
         tests:
           - not_null
+
+  - name: finance_campaigns_day
+    description: campaign day aggregated with finance and add info
+    columns:
+      - name: date_date
+        description: date
+        tests:
+          - not_null          
