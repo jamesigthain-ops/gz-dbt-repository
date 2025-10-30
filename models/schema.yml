@@ -16,6 +16,28 @@ sources:
         tests:
             - unique:
                 column_name: "( orders_id || '-' ||  pdt_id )"
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: this is the raw adwords data
+
+
+
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: this is the raw facebook data
+
+
+
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: this is the raw criteo data
+
+
+      - name: bing
+        identifier: raw_gz_bing
+        description: this is the raw bing data
+
+             
                  
       - name: product
         identifier: raw_gz_product
