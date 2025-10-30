@@ -110,4 +110,9 @@ models:
         description: sum of log_cost
       - name: total_quantity
         description: sum of quantity
-              
+
+  - name: int_campaigns
+    description: combines all 4 ad campaigns
+    tests: 
+      - unique:
+          column_name: "(date_date || '-' || campaign_key)"
