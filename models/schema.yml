@@ -117,8 +117,9 @@ models:
       - unique:
           column_name: "(date_date || '-' || campaign_key)"
 
-  - name: int_campaigns_days
-    description: camgain day aggreagated
+
+  - name: int_campaigns_day
+    description: campaign day aggregated
     columns:
       - name: date_date
         description: date
