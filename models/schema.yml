@@ -116,3 +116,11 @@ models:
     tests: 
       - unique:
           column_name: "(date_date || '-' || campaign_key)"
+
+  - name: int_campaigns_days
+    description: camgain day aggreagated
+    columns:
+      - name: date_date
+        description: date
+        tests:
+          - not_null
